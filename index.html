@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECU Interface</title>
+    <script type="text/javascript">
+        function sendRequest() {
+            // Call the Python function 'send_to_ecu' via the PyWebView API
+            pywebview.api.send_to_ecu({ 'key': 'value' }).then(response => {
+                // Update the frontend with the response data
+                document.getElementById('response').innerText = response;
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="sendRequest()">Send to ECU</button>
+    <div id="response">Waiting for ECU response...</div>
+</body>
+</html>

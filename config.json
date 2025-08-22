@@ -1,0 +1,8 @@
+{
+    "interface": "vector",
+    "tx_id": "0x720",
+    "rx_id": "0x728",
+    "channel": "0",
+    "baud_rate": "500000",
+    "message_type": "standard"
+}
